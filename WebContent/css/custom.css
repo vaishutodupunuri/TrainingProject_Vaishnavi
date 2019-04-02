@@ -1,0 +1,268 @@
+.dropdown{
+	border: none;
+	
+}
+
+div {
+ border: none;
+  
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left:5px;
+}
+.con {
+  border: none;
+  
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+.image{
+	background-image: url("images/texture-bw.png");
+}
+
+}
+.foot1{
+	 height=60px;
+	  width=60px; padding-bottom: 4px;
+	  padding-right: 4px;padding-left: 4px;padding-top: 4px;
+}
+/*Nav bar*/
+.navtop{
+	background-color: black;
+}
+.contact{
+	color: white;
+}
+/*row 2*/
+.ta{
+	height=20px;
+	 width=30px;
+	 padding-bottom: 30px;
+}
+/*LIST*/
+.type{
+	list-style-type: none;
+}
+/*DROP DOWNS*/
+.drops{
+	color: black;
+	
+}
+/*CONTACT*/
+.texture{
+background-image: url('images/texture-bw.png');
+}
+.hc{
+	padding-top: 20px;padding-left: 300px;font-family: sans-serif;
+	padding-bottom: 20px;
+}
+.cp{
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 8px;
+}
+#hcolor{
+	color: skyblue;
+}
+/*child container*/
+#cont{
+	width: 1198px;
+}
+.tb {
+  border-collapse: separate;
+  border-spacing: 50px 0;
+}
+
+/*td{
+  padding: 5px 0;
+  text-align: left;
+}*/
+/*HORIZONTAL LINE*/
+.hrw{
+	width: 20%;
+	align-self: left;
+	margin-left: 1%;
+	color:skyblue;
+}
+.box1{
+	width:100%;border-color:gray;
+	
+}
+.box{
+	width:50%;border-color:gray;
+	
+}
+/*BUTTON*/
+.msg{
+	border-color: green;
+	background-color: white;
+	color: green;
+	
+}
+/*MAP*/
+.gmap_canvas{
+	width:1320px;
+	 height:210px ;
+	 overflow:hidden;
+	 background:none!important;
+}
+.mapouter{
+	position:relative;
+	text-align:right;
+	height:210px;
+	width:1320px;}
+
+/*FOOTER*/
+.foot1{
+	background-color: gray;
+	color: white;
+}
+.non{
+	background-color: none;
+}
+.ic{
+	border: 1;
+}
+.iconcolor{
+	color:skyblue;
+}
+.footim{
+	height=5px; width=5px;
+}
+#footnav{
+	background-color:black;
+	padding-top: 20px;
+	padding-bottom: 20px; 
+	padding-left: 240px;
+}
+.send{
+	background-color: gray;
+	color:white;
+}
+/*RADIO*/
+.rsize{
+	width: 50px;
+	
+}
+.add{
+	row:4;
+}
+.conb{
+	background-color: skyblue;color: white;
+}
+
+li:hover{
+	background-color: skyblue;
+	color:white;
+	text-decoration: inherit;
+}
+
+/*ADDITIONAL REQUIRED FOR SHOPPING CART*/
+/*IMAGE SIZE*/
+.imgsize{
+	height: 40px;
+	width: 40px;
+	padding-bottom: 10px;
+}
+.colour{
+	color:#66CDAA;
+}
+.mar{
+	margin-left:2px;
+	border-color:black;
+	border:1px;
+}
+/*GRAY BOX*/
+.contbg{
+	background-color: #F0F0F0;
+}
+.contshp{
+	background-color:#C0C0C0 ;
+	align-content: left;
+	width:200px;
+}
+.proceed{
+	border-color:#66CDAA; 
+	align-content: right;
+	color:#66CDAA;
+	
+}
+.padding{
+	padding-top: 20px;
+}
+/*IMAGES SECTION*/
+.imgbot{
+	height: 160px;
+	width: 150px;
+}
+
+/*ORDER SUMMARY*/
+
+.order{
+	background-color: #F0F0F0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+.tcolor{
+	color:gray;
+	
+}
+.padn{
+	padding-bottom: 10px;
+}
+.bgc{
+	background-color: #66CDAA;
+}
+.c{
+	color:white;
+}
+/*Orders*/
+.views{
+	border-color: #66CDAA;
+	color:#66CDAA;
+	
+}
+.viewb{
+	padding-bottom: 10px;
+}
+.being{
+	background-color: skyblue;
+	color:white;
+}
+.receive{
+	background-color: green;
+	color:white;
+
+}
+.cancel{
+	background-color: red;
+	color:white;
+}
+.hold{
+	background-color: yellow;
+	color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
