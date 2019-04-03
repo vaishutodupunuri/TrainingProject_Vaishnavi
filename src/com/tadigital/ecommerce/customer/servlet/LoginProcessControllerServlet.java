@@ -36,7 +36,7 @@ public class LoginProcessControllerServlet extends HttpServlet {
 			HttpSession session = req.getSession();
 			session.setAttribute("CUSTOMERDATA", customer);
 			
-			RequestDispatcher rd = req.getRequestDispatcher("CustomerAccount.html");
+			RequestDispatcher rd = req.getRequestDispatcher("CustomerAccount.jsp");
 			rd.forward(req, resp);
 		} else {
 			HttpSession session = req.getSession();
