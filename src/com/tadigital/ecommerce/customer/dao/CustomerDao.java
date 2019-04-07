@@ -98,4 +98,82 @@ public class CustomerDao extends Dao {
 		
 		return customerList;
 	}
+	public boolean updatePassword(Customer customer) {
+		boolean update=false;
+		
+
+		Connection con = openConnection();
+		Statement stmt = openStatement(con);
+		Statement stmt2=openStatement(con);
+		ResultSet rs=null;
+		
+		String old=customer.getOldPassword();
+		String newp=customer.getNewPassword();
+		String rep= customer.getRepPassword();
+		String email=customer.getEmail();
+		
+		try {
+			String sql1="SELECT * FROM customer_information WHERE cus_email='"+email+"' AND cus_pwd='"+old+"'";
+			
+			
+			 rs = stmt.executeQuery(sql1);
+			while(rs.next()) {
+				update=false;
+				if(customer.getNewPassword().equals(customer.getRepPassword())) {
+					
+					 update=true;
+				
+			String sql2="UPDATE customer_information SET cus_pwd='"+customer.getNewPassword()+"' WHERE cus_email='"+customer.getEmail()+"'";
+					int r=stmt2.executeUpdate(sql2);
+				}
+			}
+			
+			
+			
+		} catch (SQLException sqle) {
+			sqle.printStackTrace();
+		} finally {
+			closeResultSet(rs);
+			closeStatement(stmt);
+			closeStatement(stmt2);
+			closeConnection(con);
+		}
+		
+		return update;
+	}
+	
+	public boolean updateDetails(Customer customer) {
+		boolean update=false;
+		
+		Connection con = openConnection();
+		Statement stmt = openStatement(con);
+		Statement stmt2=openStatement(con);
+		ResultSet rs=null;
+		
+		try {
+			String sql1="SELECT * FROM customer_information WHERE cus_fname='"+customer.getFn()+"' AND cus_lname='"+customer.getLn()+"'";
+			rs=stmt.executeQuery(sql1);
+			while(rs.next()) {
+			update=false;
+			String sql2="UPDATE customer_information SET gender='"+customer.getGen()+"',address='"+customer.getAddr()+"',city='"+customer.getCity()+"',zip='"+customer.getZip()+"',state='"+customer.getState()+"',country='"+customer.getCoun()+"' WHERE cus_email='"+customer.getEmail()+"'";
+			int r=stmt2.executeUpdate(sql2);
+			if(r!=0)
+			update=true;
+			}
+			
+			
+			
+		} catch (SQLException sqle) {
+			sqle.printStackTrace();
+		} 
+		finally {
+			closeResultSet(rs);
+			closeStatement(stmt2);
+			closeStatement(stmt);
+			closeConnection(con);
+		}
+		
+		return update;
+	}
+	
 }
