@@ -84,6 +84,15 @@ public class CustomerService {
 		
 		return status;
 	}
-
+	public boolean updateCustomerPassword(Customer customer) {
+		boolean update=customerDao.updatePassword(customer);
+		
+		return update;
+	}
+	public boolean updateCustomerDetails(Customer customer) {
+		boolean status=customerDao.updateDetails(customer);
+		
+		return status;
+	}
 	
 }
