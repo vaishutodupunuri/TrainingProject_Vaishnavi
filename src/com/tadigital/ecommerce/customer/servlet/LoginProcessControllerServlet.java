@@ -29,17 +29,18 @@ public class LoginProcessControllerServlet extends HttpServlet {
 		Customer customer = new Customer();
 		customer.setEmail(email);
 		customer.setPassword(password);
-		
+		HttpSession session = req.getSession();
 		CustomerService customerService = new CustomerService();
-		boolean status = customerService.loginCustomer(customer);	
+		boolean status = customerService.loginCustomer(customer);
+		session.setAttribute("User", customer.getFirstName()+customer.getLastName());
 		if(status) {
-			HttpSession session = req.getSession();
-			session.setAttribute("CUSTOMERDATA", customer);
 			
-			RequestDispatcher rd = req.getRequestDispatcher("CustomerAccount.jsp");
+			session.setAttribute("CUSTOMERDATA", customer);
+			session.setAttribute("email", email);
+			RequestDispatcher rd = req.getRequestDispatcher("Home.jsp");
 			rd.forward(req, resp);
 		} else {
-			HttpSession session = req.getSession();
+			
 			session.setAttribute("status1", "false");
 			RequestDispatcher rd = req.getRequestDispatcher("SignInSignUpForms.jsp");
 			rd.forward(req, resp);
