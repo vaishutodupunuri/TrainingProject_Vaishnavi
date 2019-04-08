@@ -10,63 +10,14 @@
 
 <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 <link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
 </head>
 <body>
 <div class="container-fluid">
-	<div class="row con" style="background-color: black;">
-		<div class="col-md-1" style="color: gray;"></div>
-			<div class="col-md-3" style="color: gray;" >
-				<p>Contact Us on +91 40 66217777</p>
-			</div>
-		<div class="col-md-1" style="color: gray;">
-		</div>
-		<div class="col-md-3"></div>
-				<div class="col-md-1 contact">
-					<i class="fas fa-sign-in-alt"></i>&nbsp;SIGN IN
-				</div>
-				<div class="col-md-1 contact">
-					<i class="fas fa-user-plus"></i>&nbsp;SIGN UP
-				</div>
-				<div>
-					<i class="fab fa-facebook-f"></i>&nbsp;
-					<i class="fab fa-google-plus-g"></i>&nbsp;
-					<i class="fab fa-twitter"></i>&nbsp;
-					<i class="fas fa-envelope"></i>&nbsp;
-				</div>
-		
-	</div>
-	<div class="row">
-		<div class="col-md-1" style="color: gray;">
-		</div>
-		<div class="col-md-4"><img alt="TADIGITAL" src="images/logo.png" height="42" width="150">
-		</div>
-		<div class="col-md-2">
-			<select class="dropdown">
-				<option value="Electronics">ELECTRONICS</option>
-			</select>
-		</div>
-		<div class="col-md-1">
-			<select class="dropdown">
-				<option value="Men">MEN</option>
-			</select>
-		</div>
-		<div class="col-md-1">
-			<select class="dropdown">
-				<option value="Women">WOMEN</option>
-			</select>
-		</div>
-		<div class="col-md-1">
-			<select class="dropdown">
-				<option value="baby">BABY &amp; KIDS</option>
-			</select>
-		</div>
-		<div class="col-md-1">
-			<select class="dropdown">
-				<option value="home">HOME &amp; FURNITURE</option>
-			</select>
-		</div>
-			
-	</div>
+	
+	<%@include file="Nav1.jsp" %>
+	
 	<div class="row" style="background-image: url(images/texture-bw.png)"> 
 		<div class="col-md-1">
 		</div>
@@ -77,7 +28,7 @@
 		<div class="col-md-1">
 		</div>
 		<div class="col-md-5" style="padding-top: 20px;padding-left: 300px;font-family: sans-serif;">
-			<p>HOME/NEW ACCOUNT/SIGN IN<p></div>
+			<p><a href="Home.jsp">HOME</a>/NEW ACCOUNT/SIGN IN<p></div>
 		</div>
 	
 	<div class="col-md-1">
@@ -158,63 +109,6 @@
 	</div>
 	
 </div>
-<div style="background-color: gray;" class="container-fluid">
-	<div class="col-md-2">
-	</div>
-	<div class="col-md-3">
-		<p style="padding-left: 20px;" ><b>ABOUT US</b></p>
-		<p>Pallentesque habitant morbi tristique senectus et netus at malesuada fames ac turpis egestus</p><hr>
-		JOIN OUR MONTHLY NEWSLETTER
-			<input type="text" name=name style="width:100% ;border-color:gray;">
-		
-	</div>
-	<div class="col-md-2">
-		<p><b>BLOG</b></p>
-		<table>
-			<tr><td>
-				<img src="images/detailsquare1.jpg" height="30px" width="30px"></td><td> BLOG POST NAME
-			</td></tr>
-			<tr><td></td></tr>
-			<tr><td><img src="images/detailsquare1.jpg" height="30px" width="30px"></td><td> BLOG POST NAME</td></tr>
-			<tr><td></td></tr>
-			<tr><td>
-				<img src="images/detailsquare1.jpg" height="30px" width="30px"></td><td> VERY VERY LONG BLOG POST NAME
-			</td></tr>
-		</table>
-	</div>
-	<div class="col-md-2"> 
-		<p><b>CONTACT</b></p>
-		<p>TECH ASPECT SOLUTIONS PVT.LTD.<br></p>
-		<p>PLOT NO:38,N HEIGHTS,3rd FLOOR,HITECH CITY PHASE 2,MADHAPUR,HYDERABAD,</p><p>TELANGANA-500081<br>INDIA</p>
-			<input type="button" value="GO TO CONTACT PAGE" style="background-color: green;color: white;">
-	</div>
-	
-	<div>
-		<table ><tr>
-			<td>
-				<img src="images/detailsquare1.jpg" height="60px" width="60px" style=" padding-bottom: 4px; padding-right: 4px;padding-left: 4px;padding-top: 4px;">
-			</td>
-			<td>
-				<img src="images/detailsquare2.jpg" height="60px" width="60px" style=" padding-bottom: 4px; padding-right: 4px;padding-left: 4px;padding-top: 4px;">
-			</td>
-			<td>
-				<img src="images/detailsquare3.jpg" height="60px" width="60px" style=" padding-bottom: 4px; padding-right: 4px;padding-left: 4px;padding-top: 4px;">
-			</td>
-		</tr>
-		<tr>
-		<td>
-			<img src="images/detailsquare3.jpg" height="60px" width="60px" style=" padding-bottom: 4px; padding-right: 4px;padding-left: 4px;padding-top: 4px;">
-		</td>
-		<td>
-			<img src="images/detailsquare2.jpg" height="60px" width="60px" style=" padding-bottom: 4px; padding-right: 4px;padding-left: 4px;padding-top: 4px;">
-		</td>
-		<td>
-			<img src="images/detailsquare1.jpg" height="60px" width="60px" style=" padding-bottom: 4px; padding-right: 4px;padding-left: 4px;padding-top: 4px;">
-		</td>
-		</tr>
-	</table>
-	</div>
-	
-</div>
+<%@include file="NavFoot.jsp"%>
 </body>
 </html>
